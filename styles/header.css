@@ -1,0 +1,63 @@
+@import url(./global.css);
+body {
+  width: 100%;
+  box-sizing: border-box;
+}
+.header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 80%;
+  margin: 50px auto;
+}
+#img1 {
+  height: 550px;
+  background-image: url(../assets/images/—Pngtree—circle\ clipart\ bright\ green\ circle_5553157.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+#title {
+  width: 516px;
+  font-weight: 800;
+  font-size: var(--heading-fs);
+}
+.content{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+#intro{ 
+  max-width: 70%;
+  font-size: var(--body-fs);
+  font-weight: 400;
+}
+span {
+  color: #39db4a;
+}
+@media only screen and (max-width: 600px) {
+  #img1{
+    width: 180px;
+    height: 200px;
+    padding-right: 36px;
+    margin-left: -80px;
+  }
+  .content{
+    align-items:start;
+    gap: 40px;
+  }
+  #title {
+    font-size: 20px;
+    width: 60%;
+  }
+  #intro{
+    font-size: var(--mobile-body-fs);
+    width: 200%;
+  }
+}
+@media only screen and (max-width:961px)  {
+  #img1{
+margin-left: -300px;
+  }
+}
