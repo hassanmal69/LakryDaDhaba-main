@@ -1,22 +1,25 @@
 @import url(global.css);
 .testimonial {
   width: 80%;
-  margin: 50px auto;
+  margin: 100px auto;
   display: flex;
   justify-content: center;
+  align-items: flex-end;
 }
 #chief {
   background-image: url(../assets/images/Rectangle\ 37.png);
   background-repeat: no-repeat;
   background-position: bottom;
   margin-right: -220px;
+  width: 486px;
+  height: 740px;
 }
 .plateAdd {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.plateAdd p{
+.plateAdd p {
   font-family: Inter;
   font-size: 20px;
   font-weight: 600;
@@ -24,6 +27,7 @@
 .img {
   display: flex;
   align-items: end;
+  width: 48%;
 }
 #plate {
   position: relative;
@@ -32,23 +36,28 @@
   position: absolute;
 }
 .testimonials-content {
+  width: 48%;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 30px;
 }
 .testimonials-content h3 {
   font-size: 20px;
   font-weight: 700;
 }
 .testimonials-content h1 {
-  font-size: var(--heading-fs);
+  font-size: 50px;
   font-weight: 700;
-  width: 650px;
+  text-align: left;
+  width: 600px;
 }
 .testimonials-content p {
   color: #555555;
-  font-size: var(--body-fs);
-  width: 650px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 35px;
+  text-align: left;
+  width: 600px;
 }
 .review {
   display: flex;
@@ -77,45 +86,109 @@
 .rating h4 {
   font-size: 24px;
 }
-@media only screen and (max-width:961px)  {
-  .testimonial{
+/* @media only screen and (max-width: 1300px) {
+  .testimonial {
     flex-direction: column;
     gap: 60px;
+  }
+  .img {
+    justify-content: center;
+  }
+} */
+@media only screen and (max-width: 1281px) {
+  .testimonial {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    gap: 0px;
+  }
+  #chief {
+    width: 386px;
+    height: 640px;
+  }
+  .testimonials-content{
+    width: 42%;
+  }
+  .testimonials-content h1 {
+    font-size: 35px;
+    width: 100%;
+    line-height: 50px;
+    text-align: left;
+  }
+.testimonials-content P {
+  font-size: 20px;
+  width: 110%;
+  line-height: 30px;
+  text-align: left;
+  } 
 }
-.img{
-  justify-content: center;   
-}
-}
-@media only screen and (max-width:1300px) { 
-  .testimonial{
+@media only screen and (max-width: 961px) {
+  .testimonial {
     flex-direction: column;
-    gap: 60px;
+    gap: 50px;
+    width: 100%;
+    align-items: center;
+   }
+   .testimonials-content{
+    width: 49%;
+   }
+  .testimonials-content h1 {
+    font-size: 40px;
+    width: 120%;
+    line-height: 50px;
+    margin-left: 0px;
+  }
+  .testimonials-content P {
+    font-size: 20px;
+    width: 110%;
+    line-height: 30px;
+    text-align: center;
+  }
+  #chief{
+    height: 593px;
+  }
 }
-.img{
-  justify-content: center;   
-}
-}
-@media only screen and (min-width:1281px) { 
+@media only screen and (max-width: 768px){
   .testimonial{
-    gap: 30px;
+    margin-left: 33px;
+    width: 60%;
+  }
+  .testimonials-content{
+    width: 52%;
+  }
+  .testimonials-content h1 {
+    width: 195%;
+}
+.testimonials-content p{
+  text-align: left;
+  width: 200%;
 }
 }
+
 @media only screen and (max-width: 600px) {
-.testimonial{
-    flex-direction: column;
-    gap: 60px;
-}
-.img{
-    justify-content: center;   
-}
-#chief {
+  .testimonial {
+      flex-direction: column;
+      gap: 29px;
+      align-items: center;
+      width: 97%;
+      margin: auto;
+      overflow-x: hidden;
+      justify-content: center;
+
+    }
+  .img {
+    justify-content: center;
+  }
+  #chief {
     width: 200px;
     height: 300px;
     background-image: url(../assets/images/Rectangle\ 37.png);
     background-size: 180px;
     margin-right: -120px;
-}
-#plate {
+  }
+  #plate {
     position: relative;
     height: 60px;
     width: 150px;
@@ -124,38 +197,53 @@
     position: absolute;
     font-size: 10px;
   }
-  .testimonials-content{
-    gap: 20px;
+  .testimonials-content {
+    gap: 5px;
+    width: 60%;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
   }
-  .testimonials-content h1{
-    font-size: var(--mobile-heading-fs);
-    width: 70%;
- }
- .testimonials-content P{
-    font-size: var(--mobile-body-fs);
-    width: 70%;
- }
- .review {
+  .testimonials-content h3 {
+    text-align: center;
+    width: 77%;
+}
+
+  .testimonials-content h1 {
+    font-weight: 700;
+    text-align: left;
+    font-size: 23px;
+    width: 115%;
+    line-height: 28px;
+  }
+  .testimonials-content P {
+    font-size: 10px;
+    width: 110%;
+    line-height: 17px;
+    text-align: center;
+  }
+  .review {
     gap: 10px;
+    margin: 15px;
   }
   .review img {
     height: 50px;
     width: 50px;
   }
-  .review-content h2{
+  .review-content h2 {
     font-size: 17px;
   }
   .rating {
     gap: 7px;
   }
   .rating img {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
   }
   .rating p {
     font-size: var(--mobile-body-fs);
   }
   .rating h4 {
-    font-size: var(--mobile-heading-fs);
+    font-size: 16px;
   }
 }
