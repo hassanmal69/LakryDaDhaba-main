@@ -206,9 +206,9 @@ const footerdata = [
   {
     logo: "./assets/images/logonew.png",
     heading: "Savor the artistry where every dish is a culinary masterpiece",
-    icon1: "./assets/Icons/facebook.png",
-    icon2: "./assets/Icons/instagram.svg",
-    icon3: "./assets/Icons/twitter.png",
+    icon1: "./assets/icons/facebook.png",
+    icon2: "./assets/icons/instagram.svg",
+    icon3: "./assets/icons/twitter.png",
     icon4: "./assets/icons/youtube.png",
     copy: "Copyright © 2023 Dscode | All rights reserved",
 },
