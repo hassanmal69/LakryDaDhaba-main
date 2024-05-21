@@ -200,9 +200,9 @@ li:hover {
   }
   .list1 p {
     text-align: center;
-    width: 90%;
+    width: 52%;
     font-size: 12px;
-     margin-left: 30px;
+    margin-left: 97px;
   }
   #lists a {
     font-size: 10px;
@@ -214,18 +214,19 @@ li:hover {
     font-size: 12px;
   }
   #logo {
-    width: 180%;
-    height: 45px;
+    width: 50%;
+    height: 60px;
   }
   .icons {
-    width: 190%;
+    justify-content: center;
+    width: 41%;
     gap: 5px;
     margin-top: 10px;
   }
   .list1 {
-    margin-top: 10px;
+    width: 100%;
+    justify-content: center;
     gap: 10px;
-    margin-left: -240px;
   }
   #fang {
     width: 60px;
@@ -236,9 +237,11 @@ li:hover {
     height: 60px;
   }
   #lists {
+
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    flex-direction: row;
+    gap: 1px;
+    width: 84%;
     }
   .texticon {
     gap: 10px;
@@ -246,6 +249,7 @@ li:hover {
   #mainlist {
     display: flex;
     flex-direction: column;
+    width: 38%;
   }
   #seclist {
     display: flex;
