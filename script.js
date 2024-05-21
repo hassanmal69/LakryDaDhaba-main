@@ -3,22 +3,22 @@ const data = [
   {
     name: "Main Dish",
     amount: "(86 dishes)",
-    imgFile: "/assets/images/Desi-Chicken-Haleem-.png",
+    imgFile: "./assets/images/Desi-Chicken-Haleem-.png",
   },
   {
     name: "Breakfast",
     amount: "(12 breakfast)",
-    imgFile: "/assets/images/Murgh Cholay and Lahori Chanay-.png",
+    imgFile: "./assets/images/Murgh Cholay and Lahori Chanay-.png",
   },
   {
     name: "Dessert",
     amount: "(48 dessert)",
-    imgFile: "/assets/images/—Pngtree—sweet jalebi_13021428.png",
+    imgFile: "./assets/images/—Pngtree—sweet jalebi_13021428.png",
   },
   {
     name: "Browse All",
     amount: "(255 items)",
-    imgFile: "/assets/images/kisspng-hyderabadi-.jpg",
+    imgFile: "./assets/images/kisspng-hyderabadi-.jpg",
   },
 ];
 
@@ -304,7 +304,10 @@ footerdata.forEach((data) => {
       const lists = document.createElement("li");
       const links = document.createElement("a");
       links.innerText = data[`link${k}`];
-      links.href = "./Home.html";
+      links.href = "./index.html";
+      if (k==4) {
+        links.href="./FAQ 2/index.html"
+      }
       lists.appendChild(links);
       mainList.appendChild(lists);
       allLists.appendChild(mainList);

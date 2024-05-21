@@ -44,7 +44,19 @@ body {
 span {
   color: #39db4a;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1300px){
+  #img1 {
+    background-position: center;
+    padding-right: 170px;
+    height: 432px;
+    width: 113%;
+  }
+  .header{
+    width: 97%;
+    gap: 0px;
+  }
+}
+@media only screen and (max-width: 1024px) {
   .header {
     display: flex;
     justify-content: center;
@@ -97,7 +109,31 @@ span {
     padding-right: 20px;
   }
 }
-
+@media only screen and (max-width: 860px) {
+  .header {
+    width: 90%;
+    gap: 50px;
+    position: static;
+  }
+  .content {
+    gap: 10px;
+  }
+  #title {
+    font-size: 34px;
+    width: 90%;
+    line-height: 40px;
+  }
+  #intro {
+    font-size: 20px;
+    width: 110%;
+    line-height: 33px;
+  }
+  #img1 {
+    width: 400px;
+    height: 300px;
+    padding-right: 20px;
+  }
+}
 @media only screen and (max-width: 600px) {
   html, body {
     overflow-x:hidden 

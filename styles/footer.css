@@ -95,8 +95,15 @@ li:hover {
   display: none;
 }
 @media only screen and (max-width: 1300px) {
+  .footer {
+    width: 90%;
+    gap: 194px;
 }
-@media only screen and (max-width: 1281px) {
+.icons{
+  width: 130%;
+}
+}
+@media only screen and (max-width: 1024px) {
   .footer {
     width: 91%;
     gap: 194px;
@@ -149,8 +156,8 @@ li:hover {
     gap: 0px;
   }
   .icons {
-    margin-left: -200px;
-    gap: 20px;
+    width: 100%;
+    justify-content: left;
     margin-top: -70px;
   }
   .list1 {
@@ -159,14 +166,18 @@ li:hover {
     align-items: flex-start;
     gap: 10px;
   }
+  #lists{
+    gap: 70px;
+  }
   .list1 p {
-    font-size: 28px;
-      text-align: left;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
       margin:0px 150px;
   }
   #logo{
-    width: 350px;
-    height: 100px;
+    width: 400px;
+    height: 120px;
     margin-left: 100px;
   }
   #fang {

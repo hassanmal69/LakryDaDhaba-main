@@ -123,15 +123,17 @@ input {
     margin-bottom: 15px;
   }
   #describe {
-    width: 557px;
+    width: 558px;
   }
   #btn {
     height: 80px;
     width: 557px;
-    font-size: 18px;
+    font-size: 16px;
     background-color: #39db4a;
     color: white;
     border: 1px solid #acacb2;
+    text-transform: uppercase;
+    font-weight: bold;
   }
   #btn2 {
     height: 48px;
@@ -146,7 +148,7 @@ input {
   .image{
     display: block;
     width: 40%;
-    background-size: cover;
+    background-size: contain;
   }
   .page{
     gap: 20px;
@@ -209,6 +211,7 @@ input {
     }
     .page{
       gap: 0px;
+      flex-direction: column-reverse;
     }
     .contactPage {
       margin: auto;
@@ -261,20 +264,29 @@ input {
       background-color: #39db4a;
       border: 1px solid #acacb2;
     }  
+    .but{
+      display: flex;
+      flex-direction: row-reverse;
+    }
 }
 @media screen and (max-width: 600px){
   .page{
     gap: 0px;
+    flex-direction: column-reverse;
   }
   .image {
   display: none; 
   }
   .contactPage {
     margin: auto;
-    width: 68%;
+    width: 100%;
     display: flex;
-    align-items: flex-start;
-  }
+    align-items: center;
+    text-align: center;
+}
+.contactPage p{
+  font-size: 20px;
+}
   input {
     height: 90px;
     width: 320px;
@@ -318,6 +330,8 @@ input {
     border: 1px solid #acacb2;
   } 
   .but{
-height: 100px;
+    height: 30px;
+    display: flex;
+    flex-direction: row-reverse;
   }
 }

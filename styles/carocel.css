@@ -124,15 +124,37 @@
   height: 90px;
   margin-left: -30px;
 }
-/* @media only screen and (max-width: 1300px) {
-  /* .testimonial {
-    flex-direction: column;
-    gap: 60px;
+ @media only screen and (max-width: 1300px) {
+  .caro {
+    width: 305px;
+    height: 494px;
   }
-  .img {
+  .carocel {
+    display: flex;
     justify-content: center;
-  } */
-@media only screen and (max-width: 1281px) {
+    gap: 78px;
+    width: 86%;
+    margin: 50px;
+}
+  .image {
+      margin: 43px 0px 0px 39px;
+  }
+  .border {
+    margin-left: -67px;
+}
+.carocel-content {
+  width: 90%;
+  gap: 10px;
+}
+.symbols {
+  justify-content: right;
+  gap: 60px;
+}
+.symbol-content {
+  width: 94%;
+}
+}
+@media only screen and (max-width: 1024px) {
   .carocel-content {
     width: 158%;
     gap: 0px;
@@ -153,7 +175,7 @@
   .images {
     display: flex;
     justify-content: right;
-    gap: 45px;
+    gap: 100px;
   }
   .image {
     margin: 0;
@@ -195,7 +217,8 @@
   }
   .textcaro p {
     font-size: 18px;
-    width: 117%;
+    width: 100%;
+    line-height: 26px;
   }
   #previous,
   #next {
@@ -238,14 +261,14 @@
     font-size: 12px;
     font-weight: 400;
     margin-bottom: 10px;
+    line-height: 28px;
   }
   .images {
     display: flex;
     justify-content: right;
-    gap: 45px;
+    gap: 80px;
   }
   .image {
-    margin: 0;
     width: 120px;
     height: 120px;
   }
@@ -297,6 +320,7 @@
  }
  .textcaro p {
   width: 100%;
+  line-height: 20px;
 }
 .caro{
 width: 232px;
@@ -324,9 +348,10 @@ height: 301px;
     font-weight: 900;
   }
   .textcaro p {
-    width: 105%;
+    width: 90%;
     font-size: 6px;
     font-weight: 500;
+    line-height: 10px;
   }
   .images {
     display: flex;

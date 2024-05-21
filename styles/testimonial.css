@@ -86,16 +86,22 @@
 .rating h4 {
   font-size: 24px;
 }
-/* @media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1300px) {
   .testimonial {
-    flex-direction: column;
     gap: 60px;
+    width: 89%;
   }
-  .img {
-    justify-content: center;
-  }
-} */
-@media only screen and (max-width: 1281px) {
+  .testimonials-content p {
+    font-size: 24px;
+    width: 491px;
+}
+.testimonials-content h1 {
+  font-size: 42px;
+  font-weight: 800;
+  width: 95%;
+}
+}
+@media only screen and (max-width: 1024px) {
   .testimonial {
     flex-direction: row;
     justify-content: center;
